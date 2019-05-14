@@ -1,11 +1,5 @@
 
 
-
-window.onscroll = function() {myFunction()};
-
-
-  
-
 $(document).ready(function () {
     
 window.onscroll = function() {myFunction()};
