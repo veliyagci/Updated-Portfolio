@@ -444,9 +444,16 @@ p {
   }
   p{
     width: 100%;
-    text-align: center;
+    margin-right: 50px;
+    left: 3%;
     top: 60%;
-    font-size: 20px;
+    animation: animated-text 1s 1s 1 normal both;
+    padding-right: 5px;
+    font-size: 24px;
+  }
+  @keyframes animated-text{
+    from{width: 100%;}
+    to{width: 100%;}
   }
   .skills {
     font-family: 'Titillium Web', sans-serif;
@@ -469,7 +476,7 @@ p {
     -ms-transition-property:width, background-color;
     -o-transition-property:width, background-color;
     transition-property:width, background-color;
-    margin-top: 500px;
+    margin-top: 600px;
   }
 
   body{
@@ -489,6 +496,6 @@ p {
     background-color: white;
     background-repeat: no-repeat;
     transform: translate(5px,50px);
-    background-image: url("../images/running.gif");
+    background-image: url("../images/running.gif")
   }
 }
