@@ -398,12 +398,11 @@ p {
   color:rgba(0, 0, 0, 0.4);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 600px) {
   h1{
     /* color:#400000 ; */
     color: #BDB76B;
     text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-    font-size: px;
     text-decoration: none;
     letter-spacing: -3px;
     margin: 0;
@@ -414,42 +413,41 @@ p {
     text-align: center;
     left: 50%;
   }
+  h1:before,
+h1:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 60%;
+  display: block;
+  border: 2px solid red;
+  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation:alternate ease-in-out tipsy;
+}
+
+h1:before {
+  border-color:gray gray rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+h1:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) lightgray lightgray;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
   img{
     width: 100%
   }
   
-  h1:before,
-  h1:after {
-    content: '';
-    padding: .9em .4em;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 65%;
-    display: block;
-    border: 2px solid red;
-    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    animation:alternate ease-in-out tipsy;
-  }
-  
-  h1:before {
-    border-color:gray gray rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-    z-index: -1;
-  }
-  
-  h1:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) lightgray lightgray;
-    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
-  }
   p{
     width: 100%;
-    margin-right: 50px;
     left: 3%;
     top: 60%;
     animation: animated-text 1s 1s 1 normal both;
     padding-right: 5px;
-    font-size: 24px;
+    font-size: 20px;
   }
   @keyframes animated-text{
     from{width: 100%;}
@@ -477,6 +475,10 @@ p {
     -o-transition-property:width, background-color;
     transition-property:width, background-color;
     margin-top: 600px;
+  }
+  .skillbar{
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   body{
@@ -520,5 +522,19 @@ p {
     padding: 10px 0px;
     letter-spacing: 1px;
     font-size: 10px;
+  }
+  #footer {
+    padding: 5px;
+    background-color:#400000;
+    text-align: center;
+    color:lightgray;;
+    font-size: 9px;
+    font-family: 'Trirong', serif;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    right:0;
+    opacity: 0.6;
   }
 }
