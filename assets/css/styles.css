@@ -397,3 +397,88 @@ p {
 	color:#ffffff;
   color:rgba(0, 0, 0, 0.4);
 }
+
+@media only screen and (max-width: 992px) {
+  h1{
+    /* color:#400000 ; */
+    color: #BDB76B;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: px;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Prosto One', cursive;
+    text-align: center;
+    left: 50%;
+  }
+  
+  h1:before,
+  h1:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 55%;
+    display: block;
+    border: 2px solid red;
+    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation:alternate ease-in-out tipsy;
+  }
+  
+  h1:before {
+    border-color:gray gray rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  h1:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) lightgray lightgray;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+  p{
+    width: 100%;
+    text-align: center;
+    top: 60%;
+    right: 30%;
+    left:5%;
+  }
+  .skills {
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    display:block;
+    margin-bottom:10px; 
+    width: 100%;
+    background-image: url("../images/walllll.jpg");
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+    margin-top: 700px;
+  }
+
+  body{
+    width: 100%;
+  }
+  .logo {
+    background-position: center;
+    position: absolute;
+    top: 10px;
+    left: 2rem;
+    width: 60px;
+    height: 50px;
+  }
+}
