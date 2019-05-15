@@ -483,4 +483,12 @@ p {
     width: 75px;
     height: 70px;
   }
+  #entrence{
+    background-attachment:fixed;
+    background-position:center;
+    background-color: white;
+    background-repeat: no-repeat;
+    transform: translate(5px,50px);
+    background-image: url("../images/running.gif");
+  }
 }
