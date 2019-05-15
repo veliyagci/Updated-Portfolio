@@ -414,6 +414,9 @@ p {
     text-align: center;
     left: 50%;
   }
+  img{
+    width: 100%
+  }
   
   h1:before,
   h1:after {
@@ -422,7 +425,7 @@ p {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 55%;
+    top: 65%;
     display: block;
     border: 2px solid red;
     border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
@@ -443,8 +446,7 @@ p {
     width: 100%;
     text-align: center;
     top: 60%;
-    right: 30%;
-    left:5%;
+    font-size: 20px;
   }
   .skills {
     font-family: 'Titillium Web', sans-serif;
@@ -467,7 +469,7 @@ p {
     -ms-transition-property:width, background-color;
     -o-transition-property:width, background-color;
     transition-property:width, background-color;
-    margin-top: 700px;
+    margin-top: 500px;
   }
 
   body{
@@ -478,7 +480,7 @@ p {
     position: absolute;
     top: 10px;
     left: 2rem;
-    width: 60px;
-    height: 50px;
+    width: 75px;
+    height: 70px;
   }
 }
