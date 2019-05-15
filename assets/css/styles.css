@@ -447,7 +447,7 @@ h1:after {
     top: 60%;
     animation: animated-text 1s 1s 1 normal both;
     padding-right: 5px;
-    font-size: 20px;
+    font-size: 18px;
   }
   @keyframes animated-text{
     from{width: 100%;}
@@ -477,8 +477,8 @@ h1:after {
     margin-top: 600px;
   }
   .skillbar{
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   body{
